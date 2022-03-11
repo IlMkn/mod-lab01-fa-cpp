@@ -6,7 +6,6 @@ unsigned int faStr1(const char *str) {
     int key = 0;
     char prev = ' ';
     for (int i = 0; i < strlen(str) + 1; i++) {
-
         if ((str[i] != ' ') && (prev == ' ') && (str[i] != '\0')) {
             num++;
         }
