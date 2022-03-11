@@ -5,7 +5,13 @@ unsigned int faStr1(const char *str) {
     int num = 0;
     int key = 0;
     char prev = ' ';
-    for (int i = 0; i < strlen(str) + 1; i++) {
+    int j = 0;
+    while (str[j] != '\0')
+    {
+        j++;
+    }
+    j++;
+    for (int i = 0; i < j; i++) {
         if ((str[i] != ' ') && (prev == ' ') && (str[i] != '\0')) {
             num++;
         }
@@ -28,7 +34,13 @@ unsigned int faStr2(const char *str) {
     int key0 = 0;
     int key1 = 0;
     char prev = ' ';
-    for (int i = 0; i < strlen(str) + 1; i++) {
+    int j = 0;
+    while (str[j] != '\0')
+    {
+        j++;
+    }
+    j++;
+    for (int i = 0; i < j; i++) {
 
         if ((str[i] != ' ') && (prev == ' ') && (str[i] != '\0')) {
             if ((str[i] <= 64) || (str[i] >= 91)) {
@@ -57,7 +69,13 @@ unsigned int faStr3(const char *str) {
     double num = 0;
     double key = 0;
     char prev = ' ';
-    for (int i = 0; i < strlen(str) + 1; i++) {
+    int j = 0;
+    while (str[j] != '\0')
+    {
+        j++;
+    }
+    j++;
+    for (int i = 0; i < j; i++) {
 
         if ((str[i] != ' ') && (prev == ' ') && (str[i] != '\0')) {
             num++;
