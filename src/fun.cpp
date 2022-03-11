@@ -19,7 +19,8 @@ unsigned int faStr1(const char *str) {
         if (str[i] >= 48 && str[i] <= 57) {
             key = 1;
         }
-        if (((str[i] == ' ')&&(prev != ' '))||(str[i] == '\0')&&(prev != ' ')) {
+        if (((str[i] == ' ') && (prev != ' ')) || (str[i] == '\0') 
+            && (prev != ' ')) {
             if (key == 1) {
                 num--;
                 key = 0;
@@ -41,16 +42,18 @@ unsigned int faStr2(const char *str) {
     }
     j++;
     for (int i = 0; i < j; i++) {
-        if ((str[i] != ' ')&&(prev == ' ')&&(str[i] != '\0')) {
+        if ((str[i] != ' ') && (prev == ' ') && (str[i] != '\0')) {
             if ((str[i] <= 64) || (str[i] >= 91)) {
                 key1 = 1;
             }
             num++;
         }
-        if (((str[i] <= 64)||(str[i] >= 123))&&(str[i] != '\0')&&(str[i] != ' ')) {
+        if (((str[i] <= 64) || (str[i] >= 123)) && (str[i] != '\0') 
+            && (str[i] != ' ')) {
             key0 = 1;
         }
-        if (((str[i] == ' ')&&(prev != ' '))||(str[i] == '\0')&&(prev != ' ')) {
+        if (((str[i] == ' ') && (prev != ' ')) || (str[i] == '\0') 
+            && (prev != ' ')) {
             if ((key0 == 1) || (key1 == 1)) {
                 num--;
                 key0 = 0;
