@@ -1,5 +1,4 @@
 // Copyright 2022 UNN-IASR
-#include <iostream>
 #include "fun.h"
 
 unsigned int faStr1(const char *str) {
@@ -86,5 +85,5 @@ unsigned int faStr3(const char *str) {
         }
         prev = str[i];
     }
-    return rint(key / num);
+    return round(key / num);
 }
