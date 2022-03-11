@@ -1,4 +1,5 @@
 // Copyright 2022 UNN-IASR
+#include <iostream>
 #include "fun.h"
 
 unsigned int faStr1(const char *str) {
@@ -85,5 +86,5 @@ unsigned int faStr3(const char *str) {
         }
         prev = str[i];
     }
-    return std::rint(key / num);
+    return rint(key / num);
 }
