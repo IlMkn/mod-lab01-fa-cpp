@@ -85,5 +85,5 @@ unsigned int faStr3(const char *str) {
         }
         prev = str[i];
     }
-    return rint(key / num);
+    return std::rint(key / num);
 }
